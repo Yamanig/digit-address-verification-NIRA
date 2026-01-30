@@ -1,6 +1,13 @@
+"use client";
+
 import Link from "next/link";
+import { useEffect } from "react";
 
 export default function HomePage() {
+  useEffect(() => {
+    console.log("Home page mounted successfully");
+  }, []);
+
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-background via-white to-primary/5">
       <div className="container-custom text-center space-y-8">
